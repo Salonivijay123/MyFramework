@@ -1,0 +1,2 @@
+[32mINFO    [0m LoginPageTest:test_base.py:12 CRM TEST HAS STARTED
+[32mINFO    [0m LoginPageTest:test_base.py:14 CRM TEST HAS FINISHED

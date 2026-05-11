@@ -1,0 +1,75 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="async-generator" />
+          <option value="allure-pytest" />
+          <option value="allure-python-commons" />
+          <option value="pytest-html" />
+          <option value="attrs" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="colorama" />
+          <option value="et_xmlfile" />
+          <option value="h11" />
+          <option value="idna" />
+          <option value="importlib_metadata" />
+          <option value="iniconfig" />
+          <option value="mypy_extensions" />
+          <option value="numpy" />
+          <option value="openpyxl" />
+          <option value="outcome" />
+          <option value="packaging" />
+          <option value="pandas" />
+          <option value="pluggy" />
+          <option value="pycparser" />
+          <option value="Pygments" />
+          <option value="PySocks" />
+          <option value="pytest" />
+          <option value="python-dateutil" />
+          <option value="PyYAML" />
+          <option value="selenium" />
+          <option value="six" />
+          <option value="sniffio" />
+          <option value="sortedcontainers" />
+          <option value="trio" />
+          <option value="trio-typing" />
+          <option value="trio-websocket" />
+          <option value="types-certifi" />
+          <option value="types-urllib3" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="urllib3" />
+          <option value="websocket-client" />
+          <option value="wsproto" />
+          <option value="zipp" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N801" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="conftest.driver.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
