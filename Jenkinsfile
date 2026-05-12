@@ -21,7 +21,7 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pip install --upgrade pip
+                python -m pip install --upgrade pip
                 pip install -r requirements.txt
                 '''
             }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pytest tests --alluredir=reports\\allure-results
+                pytest test --alluredir=reports\\allure-results
                 '''
             }
         }
@@ -49,9 +49,11 @@ pipeline {
         always {
             echo 'Test execution completed'
         }
+
         success {
             echo 'Build Passed'
         }
+
         failure {
             echo 'Build Failed'
         }
