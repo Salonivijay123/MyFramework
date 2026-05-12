@@ -21,7 +21,9 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
+
                 python -m pip install --upgrade pip
+
                 pip install -r requirements.txt
                 '''
             }
@@ -31,7 +33,8 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pytest test --alluredir=reports\\allure-results
+
+                pytest test --allure=report\\allure-results --html=reports\\html_report.html
                 '''
             }
         }
@@ -40,12 +43,14 @@ pipeline {
             steps {
                 allure includeProperties: false,
                        jdk: '',
-                       results: [[path: 'reports/allure-results']]
+                       results: [[path: 'reports/allure-results']],
+                       commandline: 'allure'
             }
         }
     }
 
     post {
+
         always {
             echo 'Test execution completed'
         }
