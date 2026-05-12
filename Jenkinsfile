@@ -34,7 +34,7 @@ pipeline {
                 bat '''
                 call venv\\Scripts\\activate
 
-                pytest test --allure=report\\allure-results --html=report\\html_report.html
+                pytest test --alluredir=report\\allure-results --html=report\\html_report.html
                 '''
             }
         }
