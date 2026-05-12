@@ -32,7 +32,7 @@ def pytest_runtest_makereport(item,call):
         if rep.when == "call" and rep.failed:
             driver = item.funcargs.get("driver", None)
             if driver:
-                screenshot_dir = os.path.join("reports", "screenshots")
+                screenshot_dir = os.path.join("report", "screenshots")
                 os.makedirs(screenshot_dir, exist_ok=True)
                 file_path = os.path.join(screenshot_dir, f"{item.name}.png")
                 driver.save_screenshot(file_path)

@@ -34,7 +34,7 @@ pipeline {
                 bat '''
                 call venv\\Scripts\\activate
 
-                pytest test --allure=report\\allure-results --html=reports\\html_report.html
+                pytest test --allure=report\\allure-results --html=report\\html_report.html
                 '''
             }
         }
@@ -43,7 +43,7 @@ pipeline {
             steps {
                 allure includeProperties: false,
                        jdk: '',
-                       results: [[path: 'reports/allure-results']],
+                       results: [[path: 'report/allure-results']],
                        commandline: 'allure'
             }
         }
