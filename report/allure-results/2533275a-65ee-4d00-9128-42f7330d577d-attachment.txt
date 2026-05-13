@@ -1,2 +1,0 @@
-INFO     LoginPageTest:test_base.py:12 CRM TEST HAS STARTED
-INFO     LoginPageTest:test_base.py:14 CRM TEST HAS FINISHED

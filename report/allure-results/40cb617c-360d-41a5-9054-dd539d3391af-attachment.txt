@@ -1,0 +1,2 @@
+2026-05-13 16:27:54,540 - Test_create_leads - INFO - CRM TEST HAS STARTED
+2026-05-13 16:27:57,726 - Test_create_leads - INFO - CRM TEST HAS FINISHED

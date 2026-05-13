@@ -1,0 +1,2 @@
+INFO     Test_create_leads:test_base.py:12 CRM TEST HAS STARTED
+INFO     Test_create_leads:test_base.py:14 CRM TEST HAS FINISHED
